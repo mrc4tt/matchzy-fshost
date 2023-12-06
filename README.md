@@ -9,7 +9,7 @@ MatchZy can solve a lot of match management requirements. It provides basic comm
 - Knife round (With expected logic, i.e., team with most players win. If same number of players, then team with HP advantage wins. If same HP, winner is decided randomly)
 - Start live match (after side selection is done by knife winner. Knife round can also be disabled).
 - Automatically starts demo recording and stop recording when match is ended
-- Coaching system
+- Coaching system - **We can't confirm that it works**
 - Damage report after every round
 - Support for round restore (Currently using the vanilla valve's backup system)
 - Provides easy configuration
@@ -28,7 +28,7 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.switch` Switches the side (For knife winner, after the knife round)
 - `.stop` Restore the backup of the current round (Both teams need to type .stop to restore the current round)
 - `.tac` Starts a tactical timeout
-- `.coach <side>` Starts coaching the specified side. Example: `.coach t` to start coaching terrorist side! **We can't confirm that it works**
+- `.coach <side>` Starts coaching the specified side. Example: `.coach t` to start coaching terrorist side!
 
 ### Practice Mode Commands
 
