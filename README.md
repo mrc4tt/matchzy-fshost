@@ -9,7 +9,7 @@ MatchZy can solve a lot of match management requirements. It provides basic comm
 - Knife round (With expected logic, i.e., team with most players win. If same number of players, then team with HP advantage wins. If same HP, winner is decided randomly)
 - Start live match (after side selection is done by knife winner. Knife round can also be disabled).
 - Automatically starts demo recording and stop recording when match is ended
-- Coaching system - **We can't confirm that it works**
+- Coaching system - **(Coach need to join team, before `.coach ct` or `.coach t` works)**
 - Damage report after every round
 - Support for round restore (Currently using the vanilla valve's backup system)
 - Provides easy configuration
