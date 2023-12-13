@@ -1,7 +1,7 @@
 MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
 
 ## What can MatchZy do?
-MatchZy can solve a lot of match management requirements. It provides basic commands like `!ready`, `!unready`, `!pause`, `!unpause`, `!tac`, `!stop`, etc, provides matches stats, and much more!
+MatchZy can solve a lot of match management requirements. It provides basic commands like `!ready`, `!unready`, `!pause`, `!unpause`, `!tac`, `!tech`, etc, provides matches stats, and much more!
 
 **Feature highlights:**
 - Practice Mode with `.bot`, `.spawn`, `.ctspawn`, `.tspawn`, `.nobots`, `.clear`, `.exitprac` and many more commands!
