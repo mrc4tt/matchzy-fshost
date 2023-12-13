@@ -56,6 +56,7 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.forceunpause` Force unpauses the match. (`.fup` for shorter command)
 - `.restore <round>` Restores the backup of provided round number.
 - `.knife` Toggles the knife round. If disabled, match will directly go from Warmup phase to Live phase.
+- `.match` Activates match. This loads in match mode. (**All 10 players need to ready up, for knife-round**)
 - `.playout` Toggles playout (If playout is enabled, all rounds would be played irrespective of the winner. Useful in scrims!)
 - `.readyrequired <number>` Sets the number of ready players required to start the match. If set to 0, all connected players will have to ready-up to start the match.
 - `.settings` Displays the current setting, like whether knife is enabled or not, value of readyrequired  players, etc.
