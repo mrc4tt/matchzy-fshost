@@ -51,7 +51,7 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 ### Admin Commands
 
 - `.start` Force starts a match.
-- `.restart` Force restarts/resets a match.
+- `.restart` Force restarts/resets a match. (**This will stop the match, and stop CSTV recording if CSTV is enabled!**)
 - `.forcepause` Pauses the match as an admin (Players cannot unpause the admin-paused match). (`.fp` for shorter command)
 - `.forceunpause` Force unpauses the match. (`.fup` for shorter command)
 - `.restore <round>` Restores the backup of provided round number.
