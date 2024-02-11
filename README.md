@@ -6,9 +6,9 @@ MatchZy can solve a lot of match management requirements. It provides basic comm
 **Feature highlights:**
 - Practice Mode with `.bot`, `.spawn`, `.ctspawn`, `.tspawn`, `.nobots`, `.clear`, `.exitprac` and many more commands!
 - Warmup with infinite money 🤑
-- Knife round (With expected logic, i.e., team with most players win. If same number of players, then team with HP advantage wins. If same HP, winner is decided randomly)
+- Knife round (With expected logic, i.e., team with the most players wins. If the same number of players, then the team with HP advantage wins. If the same HP, the winner is decided randomly)
 - Start live match (after side selection is done by knife winner. Knife round can also be disabled by the `.knife` command).
-- Automatically starts demo recording and stop recording when match is ended
+- Automatically starts demo recording and stops recording when the match is ended
 - Coaching system - **(Coach need to join team, before `.coach ct` or `.coach t` works)**
 - Damage report after every round
 - Support for round restore (Currently using the vanilla valve's backup system)
@@ -19,9 +19,9 @@ MatchZy can solve a lot of match management requirements. It provides basic comm
 ## Usage Commands
 Most of the commands can also be used using ! prefix instead of . (like !ready or /ready)
 
-- `.ready` Marks the player ready
+- `.ready` Marks the player ready (can also use `.gaben`)
 - `.unready` Marks the player unready
-- `.pause` Pauses the match in freezetime.
+- `.pause` Pauses the match in freezetime. (can also use `.p`)
 - `.tech` Pauses the match in freezetime.
 - `.unpause` Request for unpausing the match. Both teams need to type .unpause to unpause the match
 - `.stay` Stays on the same side (For knife winner, after the knife round)
@@ -32,19 +32,20 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 
 ### Practice Mode Commands
 
-- `.spawn <number>` Spawns to the provided competitive spawn number of same team
+- `.spawn <number>` Spawns to the provided competitive spawn number of the same team
 - `.ctspawn <number>` Spawns to the provided competitive spawn number of CT
 - `.tspawn <number>` Spawns to the provided competitive spawn number of T
-- `.bot` Adds a bot on user's current position
+- `.bot` Adds a bot on the user's current position
+- `.nobot` Removes the bot you have spawned (can also use `.kickbot` or `.removebot`)
 - `.nobots` Removes all the bots
 - `.clear` Clears all the active smokes, molotoves and incendiaries
 - `.fastforward` Fastforwards the server time to 20 seconds
 - `.god` Turns on god mode
-- `.savenade <name> <optional description>` Saves a lineup
-- `.loadnade <name>` Loads a lineup
-- `.deletenade <name>` Deletes a lineup from file
+- `.savenade <name> <optional description>` Saves a lineup (can also use `.save <name> <optional description>`)
+- `.loadnade <name>` Loads a lineup (can also use `.nade <name>`)
+- `.deletenade <name>` Deletes a lineup from the file
 - `.importnade <code>` Upon saving a lineup a code will be printed to chat, alternatively those can be retrieved from the savednades.json
-- `.listnades <optional filter>` Lists either all saved lineups ever or if given a filter only those that match the filter
+- `.listnades <optional filter>` Lists either all saved lineups ever or if given a filter only those that match the filter (can also use `.nades`)
 - `.ct, .t, .spec` Switches team to specified team
 - `.fas` Forces all other players to the spectator team
 
@@ -54,12 +55,12 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.restart` Force restarts/resets a match. (**This will stop the match, and stop CSTV recording if CSTV is enabled!**)
 - `.forcepause` Pauses the match as an admin (Players cannot unpause the admin-paused match). (`.fp` for shorter command)
 - `.forceunpause` Force unpauses the match. (`.fup` for shorter command)
-- `.restore <round>` Restores the backup of provided round number.
-- `.knife` Toggles the knife round. If disabled, match will directly go from Warmup phase to Live phase.
+- `.restore <round>` Restores the backup of the provided round number.
+- `.knife` Toggles the knife round. If disabled, the match will directly go from the Warmup phase to the Live phase.
 - `.match` Activates match. This loads in match mode. (**All 10 players need to ready up, for knife-round**)
 - `.playout` Toggles playout (If playout is enabled, all rounds would be played irrespective of the winner. Useful in scrims!)
 - `.readyrequired <number>` Sets the number of ready players required to start the match. If set to 0, all connected players will have to ready-up to start the match.
-- `.settings` Displays the current setting, like whether knife is enabled or not, value of readyrequired  players, etc.
+- `.settings` Displays the current setting, like whether the knife is enabled or not, the value of readyrequired  players, etc.
 - `.map <mapname>` Changes the map
 - `.asay <message>` Say as an admin in all chat
 - `.reload_admins` Reloads admins from `pXXX.json`
