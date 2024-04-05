@@ -7,7 +7,7 @@ MatchZy can solve a lot of match management requirements. It provides basic comm
 - Practice Mode with `.bot`, `.spawn`, `.ctspawn`, `.tspawn`, `.nobots`, `.clear`, `.exitprac` and many more commands!
 - Warmup with infinite money 🤑
 - Knife round (With expected logic, i.e., the team with the most players wins. If the same number of players, then the team with HP advantage wins. If the same HP, the winner is decided randomly)
-- Start live match (after side selection is done by knife winner. Knife round can also be disabled by the `.kr`, `.rk` command).
+- Start live match (after side selection is done by knife winner. Knife round can also be disabled by the '.knife', `.kr` anmd `.rk` command).
 - Automatically starts demo recording and stops recording when the match is ended
 - Coaching system - **(Coach need to join team, before `.coach ct` or `.coach t` works)**
 - Damage report after every round
@@ -48,7 +48,6 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.listnades <optional filter>` Lists either all saved lineups ever or if given a filter only those that match the filter (can also use `.nades`)
 - `.ct, .t, .spec` Switches team to specified team
 - `.fas` Forces all other players to the spectator team
-- `.previewnade` Turns on sv_grenade_trajectory_prac_pipreview
 
 ### Admin Commands
 
@@ -57,10 +56,10 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.forcepause` Pauses the match as an admin (Players cannot unpause the admin-paused match). (`.fp` for a shorter command)
 - `.forceunpause` Force unpauses the match. (`.fup` for shorter command)
 - `.restore <round>` Restores the backup of the provided round number.
-- `.rk` Toggles the knife round. If disabled, the match will directly go from the Warmup phase to the Live phase. (Can also use: `.kr`)
+- `.rk` Toggles the knife round. If disabled, the match will directly go from the Warmup phase to the Live phase. (Can also use: `.kr`, `.knife`)
 - `.match` Activates match. This loads in match mode. (**All 10 players need to ready up, for knife-round**)
 - `.playout` Toggles playout (If playout is enabled, all rounds would be played irrespective of the winner. Useful in scrims!)
-- `.readyrequired <number>` Sets the number of ready players required to start the match. If set to 0, all connected players will have to ready up to start the match.
+- `.readyrequired <number>` Sets the number of ready players required to start the match. If set to 0, all connected players will have to ready-up to start the match.
 - `.settings` Displays the current setting, like whether the knife is enabled or not, the value of ready required  players, etc.
 - `.map <mapname>` Changes the map
 - `.asay <message>` Say as an admin in all chat
