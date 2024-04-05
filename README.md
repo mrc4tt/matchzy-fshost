@@ -7,7 +7,7 @@ MatchZy can solve a lot of match management requirements. It provides basic comm
 - Practice Mode with `.bot`, `.spawn`, `.ctspawn`, `.tspawn`, `.nobots`, `.clear`, `.exitprac` and many more commands!
 - Warmup with infinite money 🤑
 - Knife round (With expected logic, i.e., the team with the most players wins. If the same number of players, then the team with HP advantage wins. If the same HP, the winner is decided randomly)
-- Start live match (after side selection is done by knife winner. Knife round can also be disabled by the '.knife', `.kr` anmd `.rk` command).
+- Start live match (after side selection is done by knife winner. Knife round can also be disabled by the '.knife', `.kr` and `.rk` commands).
 - Automatically starts demo recording and stops recording when the match is ended
 - Coaching system - **(Coach need to join team, before `.coach ct` or `.coach t` works)**
 - Damage report after every round
