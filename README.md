@@ -1,5 +1,7 @@
 MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
 
+#### This plugin has been modified for FSHOST Pro!
+
 ## What can MatchZy do?
 MatchZy can solve a lot of match management requirements. It provides basic commands like `!ready`, `!unready`, `!pause`, `!unpause`, `!tac`, `!tech`, etc., matches stats, and much more!
 
@@ -21,7 +23,6 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 
 - `.ready` Marks the player ready
 - `.unready` Marks the player unready
-- `.forceready` Force-readies the player's team (Only works when using Match setup using JSON/Get5)
 - `.pause` Pauses the match in freezetime (Tactical or normal pause, depends on `matchzy_use_pause_command_for_tactical_pause`).
 - `.tech` Pauses the match in freezetime.
 - `.unpause` Request for unpausing the match. Both teams need to type .unpause to unpause the match
@@ -36,7 +37,7 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.ctspawn <number>` Spawns to the provided competitive spawn number of CT
 - `.tspawn <number>` Spawns to the provided competitive spawn number of T
 - `.bot` Adds a bot on user's current position
-- `.nobot` Removes the bot you have spawned (can also use `.kickbot` or `.removebot`)  
+- `.nobot` Removes the bot you have spawned (can also use `.kickbot` or `.removebot` -- This is a custom command, as MatchZy is modified for FSHOST Pro)  
 - `.crouchbot` Adds a crouched bot on user's current position
 - `.boost` Adds a bot on current position and boosts player on it
 - `.crouchboost` Adds a crouched bot on current position and boosts player on it
@@ -44,7 +45,7 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.fas` / `.watchme` Forces all players into spectator except the player who called this command
 - `.nobots` Removes all the bots
 - `.clear` Clears all the active smokes, molotoves and incendiaries
-- `.fastforward` Fastforwards the server time to 20 seconds
+- `.fastforward` Fastforwards the server time to 20 seconds (can also use: `.ff`)
 - `.noflash` Toggles immunity for flashbang (it will still blind others with noflash disabled)
 - `.dryrun` Turns on dry-run mode
 - `.god` Turns on god mode
