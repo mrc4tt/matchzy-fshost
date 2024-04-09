@@ -67,6 +67,7 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.rethrowflash` Throws your last thrown flash.
 - `.rethrowmolotov` Throws your last thrown molotov.
 - `.rethrowdecoy` Throws your last thrown decoy.
+- `.previewnade` This toggle enables or disables a picture-in-picture preview showing the trajectory of grenades in practice mode. (**sv_grenade_trajectory_prac_pipreview**)
 
 ### Admin Commands
 
