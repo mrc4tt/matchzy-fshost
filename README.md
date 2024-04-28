@@ -9,7 +9,7 @@ MatchZy can solve a lot of match management requirements. It provides basic comm
 - Practice Mode with `.bot`, `.spawn`, `.ctspawn`, `.tspawn`, `.nobots`, `.clear`, `.exitprac` and many more commands!
 - Warmup with infinite money 🤑
 - Knife round (With expected logic, i.e., the team with the most players wins. If the same number of players, then the team with HP advantage wins. If the same HP, the winner is decided randomly)
-- Start live match (after side selection is done by knife winner. Knife round can also be disabled by the `.kniferound <on/off>`, `.kr <on/off>` and `.rk <on/off>` commands).
+- Start live match (after knife winner makes side selection. Knife round can also be disabled by the `.kniferound <on/off>`, `.kr <on/off>` and `.rk <on/off>` commands).
 - Automatically starts demo recording and stops recording when the match is ended
 - Coaching system - **(Coach need to join team, before `.coach ct` or `.coach t` works)**
 - Damage report after every round
@@ -30,17 +30,17 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.switch`/`.swap` Switches the side (For knife winner, after the knife round)
 - `.stop` Restore the backup of the current round (Both teams need to type .stop to restore the current round)
 - `.tac` Starts a tactical timeout
-- `.coach <side>` Starts coaching the specified side. Example: `.coach t` to start coaching terrorist side!
+- `.coach <side>` Starts coaching the specified side. Example: `.coach t` to start coaching the terrorist side!
 
 ### Practice Mode Commands
-- `.spawn <number>` Spawns to the provided competitive spawn number of same team
+- `.spawn <number>` Spawns to the provided competitive spawn number of the same team
 - `.ctspawn <number>` Spawns to the provided competitive spawn number of CT
 - `.tspawn <number>` Spawns to the provided competitive spawn number of T
-- `.bot` Adds a bot on user's current position
+- `.bot` Adds a bot on the user's current position
 - `.nobot` Removes the bot you have spawned (can also use `.kickbot` or `.removebot` -- This is a custom command, as MatchZy is modified for FSHOST Pro)  
-- `.crouchbot` Adds a crouched bot on user's current position
-- `.boost` Adds a bot on current position and boosts player on it
-- `.crouchboost` Adds a crouched bot on current position and boosts player on it
+- `.crouchbot` Adds a crouched bot on the user's current position
+- `.boost` Adds a bot on the current position and boosts the player on it
+- `.crouchboost` Adds a crouched bot on the current position and boosts the player on it
 - `.ct`, `.t`, `.spec` Changes player team to the requested team
 - `.fas` / `.watchme` Forces all players into spectator except the player who called this command
 - `.nobots` Removes all the bots
@@ -51,7 +51,7 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.god` Turns on god mode
 - `.savenade <name> <optional description>` Saves a lineup
 - `.loadnade <name>` Loads a lineup
-- `.deletenade <name>` Deletes a lineup from file
+- `.deletenade <name>` Deletes a lineup from the file
 - `.importnade <code>` Upon saving a lineup a code will be printed to chat, alternatively those can be retrieved from the savednades.cfg
 - `.listnades <optional filter>` Lists either all saved lineups ever or if given a filter only those that match the filter
 - `.break` Breaks all the breakable entities (glass windows, wooden doors, vents, etc)
@@ -61,7 +61,7 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.back <number>` Teleports you back to the provided position in your grenade history
 - `.delay <delay_in_seconds>` Sets a delay on your last grenade. This is only used when using .rethrow or .throwindex
 - `.throwindex <index> <optional index> <optional index>` Throws grenade of provided position(s) from your grenade thrown history. Example: `.throwindex 1 2` will throw your 1st and 2nd grenade. `.throwindex 4 5 8 9` will throw your 4th, 5th, 8th and 9th grenade (If you've added delay in grenades, they'll be thrown with their specific delay).
-- `.lastindex` Prints index number of your last thrown grenade.
+- `.lastindex` Prints the index number of your last thrown grenade.
 - `.rethrowsmoke` Throws your last thrown smoke grenade.
 - `.rethrownade` Throws your last thrown HE grenade.
 - `.rethrowflash` Throws your last thrown flash.
@@ -72,14 +72,14 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 ### Admin Commands
 
 - `.start` Force starts a match.
-- `.restart` Force restarts/resets a match. (**This will stop the match and stop the CSTV recording even if the match is under scrim mode or normally match mode.**) - (can also use `.forcestop`, `.forceend`, `.end` and `.endgame`)
+- `.restart` Force restarts/resets a match. (**This will stop the match and stop the CSTV recording even if the match is under scrim mode or normally match mode.**)
 - `.forcepause` Pauses the match as an admin (Players cannot unpause the admin-paused match). (`.fp` for a shorter command)
 - `.forceunpause` Force unpauses the match. (`.fup` for shorter command)
 - `.restore <round>` Restores the backup of the provided round number.
 - `.rk <on/off>` Toggles the knife round. If disabled, the match will directly go from the Warmup phase to the Live phase. (Can also use: `.kr <on/off>`, `.kniferound <on/off>`)
 - `.match` Activates match. This loads in match mode. (**All 10 players need to ready up, for knife-round**)
 - `.playout` Toggles playout (If playout is enabled, all rounds would be played irrespective of the winner. Useful in scrims!)
-- `.readyrequired <number>` Sets the number of ready players required to start the match. If set to 0, all connected players will have to ready up to start the match.
+- `.readyrequired <number>` Sets the number of ready players required to start the match. If set to 0, all connected players will have to be ready up to start the match.
 - `.settings` Displays the current setting, like whether the knife is enabled or not, the value of ready required  players, etc.
 - `.map <mapname>` Changes the map
 - `.asay <message>` Say as an admin in all chat
