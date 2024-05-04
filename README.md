@@ -1,6 +1,5 @@
 MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
-
-#### This plugin has been modified for FSHOST Pro!
+#### MatchZy has been modified for FSHOST Pro!
 
 ## What can MatchZy do?
 MatchZy can solve a lot of match management requirements. It provides basic commands like `!ready`, `!unready`, `!pause`, `!unpause`, `!tac`, `!tech`, etc., matches stats, and much more!
@@ -20,7 +19,6 @@ MatchZy can solve a lot of match management requirements. It provides basic comm
 
 ## Usage Commands
 Most of the commands can also be used using ! prefix instead of . (like !ready or /ready)
-
 - `.ready` Marks the player ready
 - `.unready` Marks the player unready
 - `.pause` Pauses the match in freezetime (Tactical or normal pause, depends on `matchzy_use_pause_command_for_tactical_pause`).
@@ -67,7 +65,9 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.rethrowflash` Throws your last thrown flash.
 - `.rethrowmolotov` Throws your last thrown molotov.
 - `.rethrowdecoy` Throws your last thrown decoy.
-- `.previewnade` / `.nadecam` This toggle enables or disables a picture-in-picture preview showing the trajectory of grenades in practice mode. (**sv_grenade_trajectory_prac_pipreview**)
+- `.solid` Toggles mp_solid_teammates
+- `.impacts` Toggles sv_showimpacts
+- `.traj`, `.nadecam`, `.previewnade` Toggles sv_grenade_trajectory_prac_pipreview
 
 ### Admin Commands
 
@@ -76,7 +76,7 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.forcepause` Pauses the match as an admin (Players cannot unpause the admin-paused match). (`.fp` for a shorter command)
 - `.forceunpause` Force unpauses the match. (`.fup` for shorter command)
 - `.restore <round>` Restores the backup of the provided round number.
-- `.rk <on/off>` Toggles the knife round. If disabled, the match will directly go from the Warmup phase to the Live phase. (Can also use: `.kr <on/off>`, `.kniferound <on/off>`)
+- `.rk` / `.roundknife` / `.kr` <on/off> Toggles the knife round. If disabled, match will directly go from Warmup phase to Live phase.
 - `.match` Activates match. This loads in match mode. (**All 10 players need to ready up, for knife-round**)
 - `.playout` Toggles playout (If playout is enabled, all rounds would be played irrespective of the winner. Useful in scrims!)
 - `.readyrequired <number>` Sets the number of ready players required to start the match. If set to 0, all connected players will have to be ready up to start the match.
@@ -85,6 +85,6 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.asay <message>` Say as an admin in all chat
 - `.team1 <name>` Sets name for Team 1 (CT by default)
 - `.team2 <name>` Sets name for Team 2 (Terrorist by default)
-- `.prac` Starts Practice Mode
+- `.prac` Starts Practice Mode (Alias: `.tactics`)
 - `.exitprac` Exits from practice mode and loads Match mode.
 - `.rcon <command>` Sends command to the server
