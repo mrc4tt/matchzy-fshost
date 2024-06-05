@@ -1,5 +1,4 @@
 MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matches with easy configuration!
-
 #### This plugin has been modified for FSHOST Pro!
 
 ## What can MatchZy do?
@@ -15,12 +14,9 @@ MatchZy can solve a lot of match management requirements. It provides basic comm
 - Damage report after every round
 - Support for round restore (Currently using the vanilla valve's backup system)
 - Provides easy configuration
-- And much more!!
-
 
 ## Usage Commands
 Most of the commands can also be used using ! prefix instead of . (like !ready or /ready)
-
 - `.ready` Marks the player ready
 - `.unready` Marks the player unready
 - `.pause` Pauses the match in freezetime (Tactical or normal pause, depends on `matchzy_use_pause_command_for_tactical_pause`).
@@ -70,7 +66,6 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.previewnade` / `.nadecam` This toggle enables or disables a picture-in-picture preview showing the trajectory of grenades in practice mode. (**sv_grenade_trajectory_prac_pipreview**)
 
 ### Admin Commands
-
 - `.start` Force starts a match.
 - `.restart` Force restarts/resets a match. (**This will stop the match and stop the CSTV recording even if the match is under scrim mode or normally match mode.**)
 - `.forcepause` Pauses the match as an admin (Players cannot unpause the admin-paused match). (`.fp` for a shorter command)
@@ -78,11 +73,10 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.restore <round>` Restores the backup of the provided round number.
 - `.rk <on/off>` Toggles the knife round. If disabled, the match will directly go from the Warmup phase to the Live phase. (Can also use: `.kr <on/off>`, `.kniferound <on/off>`)
 - `.match` Activates match. This loads in match mode. (**All 10 players need to ready up, for knife-round**)
-- `.playout` Toggles playout (If playout is enabled, all rounds would be played irrespective of the winner. Useful in scrims!)
-- `.readyrequired <number>` Sets the number of ready players required to start the match. If set to 0, all connected players will have to be ready up to start the match.
+- `.scrim` Activates scrim. This loads in scrim mode. (**All 10 players need to ready up, NO KNIFE ROUND!** - All rounds would be played irrespective of the winner. Useful in scrims!)
+- `.readyrequired <number>` Sets the number of ready players required to start the match. All connected players will have to be ready to start the game.
 - `.settings` Displays the current setting, like whether the knife is enabled or not, the value of ready required  players, etc.
 - `.map <mapname>` Changes the map
-- `.asay <message>` Say as an admin in all chat
 - `.team1 <name>` Sets name for Team 1 (CT by default)
 - `.team2 <name>` Sets name for Team 2 (Terrorist by default)
 - `.prac` Starts Practice Mode
