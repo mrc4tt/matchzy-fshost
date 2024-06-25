@@ -5,7 +5,7 @@ MatchZy is a plugin for CS2 for running and managing practice/pugs/scrims/matche
 MatchZy can solve a lot of match management requirements. It provides basic commands like `!ready`, `!unready`, `!pause`, `!unpause`, `!tac`, `!tech`, etc., matches stats, and much more!
 
 **Feature highlights:**
-- Practice Mode with `.bot`, `.spawn`, `.ctspawn`, `.tspawn`, `.nobots`, `.clear`, `.exitprac` and many more commands!
+- Practice Mode many more commands!
 - Warmup with infinite money 🤑
 - Knife round (With expected logic, i.e., the team with the most players wins. If the same number of players, then the team with HP advantage wins. If the same HP, the winner is decided randomly)
 - Start live match (after knife winner makes side selection. Knife round can also be disabled by the `.kniferound <on/off>`, `.kr <on/off>` and `.rk <on/off>` commands).
@@ -19,13 +19,13 @@ MatchZy can solve a lot of match management requirements. It provides basic comm
 Most of the commands can also be used using ! prefix instead of . (like !ready or /ready)
 - `.ready` Marks the player ready
 - `.unready` Marks the player unready
-- `.pause` Pauses the match in freezetime (Tactical or normal pause, depends on `matchzy_use_pause_command_for_tactical_pause`).
+- `.pause` Pauses the match in freezetime (Normal pause).
 - `.tech` Pauses the match in freezetime.
-- `.unpause` Request for unpausing the match. Both teams need to type .unpause to unpause the match
+- `.unpause` Request for unpausing the match. Both teams need to type **`!unpause`** or **`.unpause`** to unpause the match
 - `.stay` Stays on the same side (For knife winner, after the knife round)
 - `.switch`/`.swap` Switches the side (For knife winner, after the knife round)
 - `.stop` Restore the backup of the current round (Both teams need to type .stop to restore the current round)
-- `.tac` Starts a tactical timeout
+- `.tac` Starts a tactical timeout - **You can't unpause this!**
 - `.coach <side>` Starts coaching the specified side. Example: `.coach t` to start coaching the terrorist side!
 
 ### Practice Mode Commands
@@ -75,8 +75,7 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.match` Activates match. This loads in match mode. (**All 10 players need to ready up, for knife-round**)
 - `.scrim` Activates scrim. This loads in scrim mode. (**All 10 players need to ready up, NO KNIFE ROUND!** - All rounds would be played irrespective of the winner. Useful in scrims!)
 - `.readyrequired <number>` Sets the number of ready players required to start the match. All connected players will have to be ready to start the game.
-- `.settings` Displays the current setting, like whether the knife is enabled or not, the value of ready required  players, etc.
-- `.map <mapname>` Changes the map
+- `.settings` Displays the current setting, like whether the knife is enabled or not, the value of ready required players, etc.
 - `.team1 <name>` Sets name for Team 1 (CT by default)
 - `.team2 <name>` Sets name for Team 2 (Terrorist by default)
 - `.prac` Starts Practice Mode
