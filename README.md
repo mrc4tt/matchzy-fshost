@@ -30,8 +30,8 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 
 ### Practice Mode Commands
 - `.spawn <number>` Spawns to the provided competitive spawn number of the same team
-- `.ctspawn <number>` Spawns to the provided competitive spawn number of CT
-- `.tspawn <number>` Spawns to the provided competitive spawn number of T
+- `.ctspawn <number>` Spawns to the provided competitive spawn number of CT (Alias: `.cts`)
+- `.tspawn <number>` Spawns to the provided competitive spawn number of T (Alias: `.ts`)
 - `.bot` Adds a bot on the user's current position
 - `.nobot` Removes the bot you have spawned (can also use `.kickbot` or `.removebot` -- This is a custom command, as MatchZy is modified for FSHOST Pro)  
 - `.crouchbot` Adds a crouched bot on the user's current position
@@ -43,15 +43,15 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.clear` Clears all the active smokes, molotoves and incendiaries
 - `.fastforward` Fastforwards the server time to 20 seconds (can also use: `.ff`)
 - `.noflash` Toggles immunity for flashbang (it will still blind others with noflash disabled)
-- `.dryrun` Turns on dry-run mode
+- `.dryrun` Turns on dry-run mode (Alias: `.dry`)
 - `.god` Turns on god mode
-- `.savenade <name> <optional description>` Saves a lineup
-- `.loadnade <name>` Loads a lineup
-- `.deletenade <name>` Deletes a lineup from the file
-- `.importnade <code>` Upon saving a lineup a code will be printed to chat, alternatively those can be retrieved from the savednades.cfg
-- `.listnades <optional filter>` Lists either all saved lineups ever or if given a filter only those that match the filter
+- `.savenade <name> <optional description>` Saves a lineup (Alias: `.sn`)
+- `.loadnade <name>` Loads a lineup (Alias: `.sn`)
+- `.deletenade <name>` Deletes a lineup from file (Alias: `.dn`)
+- `.importnade <code>` Upon saving a lineup a code will be printed to chat, alternatively those can be retrieved from the savednades.cfg (Alias: `.in`)
+- `.listnades <optional filter>` Lists either all saved lineups ever or if given a filter only those that match the filter (Alias: `.lin`)
 - `.break` Breaks all the breakable entities (glass windows, wooden doors, vents, etc)
-- `.rethrow` Rethrows your last thrown grenade
+- `.rethrow` Rethrows your last thrown grenade (Alias: `.rt`)
 - `.timer` Starts a timer immediately and stops it when you type .timer again, telling you the duration of time
 - `.last` Teleports you back to where you threw your last grenade from
 - `.back <number>` Teleports you back to the provided position in your grenade history
@@ -68,7 +68,7 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 ### Admin Commands
 - `.start` Force starts a match.
 - `.restart` Force restarts/resets a match. (**This will stop the match and stop the CSTV recording even if the match is under scrim mode or normally match mode.**)
-- `.forcepause` Pauses the match as an admin (Players cannot unpause the admin-paused match). (`.fp` for a shorter command)
+- `.forcepause` Pauses the match as an admin (Players cannot unpause the admin-paused game). (`.fp` for a shorter command)
 - `.forceunpause` Force unpauses the match. (`.fup` for shorter command)
 - `.restore <round>` Restores the backup of the provided round number.
 - `.rk <on/off>` Toggles the knife round. If disabled, the match will directly go from the Warmup phase to the Live phase. (Can also use: `.kr <on/off>`, `.kniferound <on/off>`)
@@ -80,4 +80,3 @@ Most of the commands can also be used using ! prefix instead of . (like !ready o
 - `.team2 <name>` Sets name for Team 2 (Terrorist by default)
 - `.prac` Starts Practice Mode
 - `.exitprac` Exits from practice mode and loads Match mode.
-- `.rcon <command>` Sends command to the server
